@@ -21,80 +21,77 @@ html, body{
     height:auto;/* height depends on the content */
     margin-top:10px; /* Set a little Margin from the top */
     border-collapse: collapse; /* If we later deside to add a border to the menu and content, it won't display both.  */
-    margin-bottom:5%;
-    border-left:1px solid grey;
-    padding-left:5px;
+    margin-bottom:5%;/* Leave some space at the bottom. */
+    border-left:1px solid grey; /* Seperates the menu visually from the main content  */
+    padding-left:5px; /* Inner-Left margin, so the content isn't directly at the border */
 }
 
-.logo-left{
-    width:100%;
+.logo-left{ /* Define the Possible size of the Logo-Img  */
+    width:100%; 
     height:20%;
 }
 
-.logo-left img{
+.logo-left img{ /* Definition of the Top Left Logo  */
     width:auto;
-    height:100%;
+    height:100%; 
     margin-left:auto;
-    margin-right:auto;
-    display:block;
+    margin-right:auto;/* Centers the Img */
+    display:block; /* Defines the box around the img */
 }
 
-.left-container ul{
-    list-style-type: none;
+.left-container ul{ /* Definition of the List */
+    list-style-type: none; /* So it doesn't look like a enumeration */
 }
-.left-container li{
-    margin-bottom:10px;
+.left-container li{ /* Definition of the List-Item */
+    margin-bottom:10px; 
 }
-.left-container active{
-    font-weight: bolder;
+.left-container .active{ /* Highlights the active page */
+    font-weight: bolder; /* Makes the font bold */
     color:black;
 }
 .left-container a{
-    text-decoration: none;
+    text-decoration: none; /* Removes the default styling for a link, like underlining */
 }
-.left-container a:hover{
+.left-container a:hover{ /* On Mouse-Over a link in the Menu, Change the Text-Color */
     color:rgb(173, 177, 230);
 }
 
 /* Landing Page (index.html) */
 
-.header-center-landing h1{
+.header-center-landing h1{ /* StartPage Header */
     font-size:xx-large;
     margin-top:5%;
     margin-bottom:3%;
 }
 
-.main-image{
+.main-image{ /* StartPage Center Image-Box Style Definition */
     height:60%;
     width:100%;
 }
-.main-image img{
+.main-image img{ /* StartPAge Center Image Style Definition */
     width: auto;
     height:100%;
-    margin-left: auto;
+    margin-left: auto; /* Center it */
     margin-right:auto;
     display:block;
-    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
-    filter: blur(0px);
 }
 
-footer{
-    width:100%;
-    right:0;
+footer{ /* Bottom-Fixed-Footer Style Definition */
+    width:100%; /* Full Window Width */
+    right:0; /* From Right Bottom */
     bottom:0;
-    left:0;
-    position: fixed;
+    left:0; /* To the left Bottom */
+    position: fixed; /* Scrolls with the Users scrolling */ 
     background-color: rgb(78, 157, 253); 
-    height:5%;
-    vertical-align: middle;
-    line-height: 100%;
+    height:5%; /* Defines the height of the footer */
+    line-height: 5%;
 }
 
-footer .footer-content{
-    width:33%;
-    display:inline-block;
-    text-align: center;
-    padding-top: 5px;
+footer .footer-content{/* Defines the Footer Information-Boxes */
+    width:33%; /* It's split up into three equal parts. Each part has a width of 33%. */
+    display:inline-block; /* Defines the Box-Style of the div */ 
+    text-align: center; /* Centers the text */
+    padding-top: 10px;
 }
 
 /*
@@ -102,63 +99,62 @@ Product Page
 */
 
 table{
-    border-collapse: collapse;
+    border-collapse: collapse; /* Let's the borders visually disappear */
 }
 
-th,td {
+th,td { /* Definition of the table Headers and the Table Cells*/
     text-align: center;
     padding:10px;
 }
 
-tr:nth-child(even){
+tr:nth-child(even){ /* For each second item change the background color of the table-row */
     background-color:rgba(225, 239, 255, 0.692);
 }
 
-
-th{
-    background-color:rgba(78, 154, 253, 0.692);
+th{/* Table Header */
+    background-color:rgba(78, 154, 253, 0.692); /* Highlight the Header Informations */
     color:white;
 }
 
-.product-content{
+.product-content{ /* Definition of a Product Box */
     width: 30%;
     height:auto;
     border:1px solid grey;
     padding:5px; 
-    display:inline-block;
+    display:inline-block; /* So that the element can be on the same "line" as two other products */
     margin-top:10px;
     margin-right:10px;
 }
 
-.product-preview {
+.product-preview { /* Definition of the image div */
     width:100%;
     height:auto;
 }
-.product-preview img{
+.product-preview img{ /* Definition of the Product image-Style */
     width:100%;
     height:auto;
     display:block;
 }
-.product-desc{
+.product-desc{ /* Product Description */
     display:block;
 }
 
-.product-desc p{
+.product-desc p{ 
     text-overflow: ellipsis;
 }
 
-.interaction-div{
+.interaction-div{ /* Div conatining the Buy-Button and Amount Counter */
     width:100%;
 }
-.input-desc{
+.input-desc{ /* Amount Description Text */
     float: left;
 }
-.interaction-div input[type=number]{
+.interaction-div input[type=number]{ /* Amount Input */
     float:left;
     font-size: larger;
     width:15%;
 }
-.interaction-div input[type=button]{
+.interaction-div input[type=button]{ /* Buy Button Style Definition */
     float: right;
     background-color:lightskyblue;
     color:white;
@@ -168,8 +164,8 @@ th{
     padding:6px 12px;
     font-size: larger;
 }
-.interaction-div input[type=button]:hover{
-    cursor:pointer;
+.interaction-div input[type=button]:hover{ /* MouseOver Effect of the Buy Button */
+    cursor:pointer; /* Shows the Button Cursor as a Pointer, like by hovering above a link */
     background-color: #3398b7;
 }
 
@@ -177,13 +173,13 @@ th{
 Contact Us Page
 */
 
-input[type=text], input[type=email]{
+input[type=text], input[type=email]{ /* Define the input text-size */
     font-size:larger;
 }
 textarea{
     font-size:larger;
 }
-input[type=submit]{
+input[type=submit]{ /* Submit Button Styling*/
     padding: 6px 12px;
     border-radius: 5px 5px 5px 5px;    
     color:white;
@@ -191,38 +187,35 @@ input[type=submit]{
     border:1px solid #3356b7; 
     font-size:larger;
 }
-input[type=submit]:hover{
+input[type=submit]:hover{ /* Hover effect of the Submit Button */
     cursor: pointer;
     background-color: #3398b7;
     
 }
 
-.person-div{
+.person-div{ /* Similar to the Product Page. Definition of each Person-Div */
     display:inline-block;
     width:30%;
     height:50%;
     margin-bottom:10%
 }
-.portrait-img{
+.portrait-img{ /* The Image Box */
     width:100%;
 }
-.portrait-img img{
+.portrait-img img{ /* Style Definition of the Portrait Images of the employees */
     width:auto;
     height:70%;
     display:block;
-    border-radius:25%;
+    border-radius:25%; /* Rounded effect of the portrait image */
 
 }
-.person-name{
+.person-name{ /* Highlight the name of the employee */
     text-align: center;
     font-weight: bold;
-    color:black;
+    color:black; 
 }
-.person-position{
+.person-position{ /* To visually differ from the name */
     text-align: center;
     font-weight: bolder;
     color:grey;
-}
-.person-desc{
-
 }
