@@ -18,9 +18,9 @@ html, body{
 .right-container{ /* Right Container contains the main Part */
     float:right; /* Set the div to the right */
     width:80%; 
-    height:auto;
-    margin-top:10px;
-    border-collapse: collapse;
+    height:auto;/* height depends on the content */
+    margin-top:10px; /* Set a little Margin from the top */
+    border-collapse: collapse; /* If we later deside to add a border to the menu and content, it won't display both.  */
     margin-bottom:5%;
     border-left:1px solid grey;
     padding-left:5px;
