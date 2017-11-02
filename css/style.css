@@ -1,24 +1,23 @@
-*{
+*{/* Set Font for the whole webpage */
     font-family: Verdana, Geneva, sans-serif;
 }
 html, body{
-    height:auto;
-    width: 100%;
-    margin-top:0;
+    height:auto; /* variable height. relates  */
+    width: 100%; /* Use the full width */
+    margin-top:0; /* Reset the default margins */
     margin-bottom:0;
 }
 
-.left-container{
-    float:left;
-    width: 15%;
-    height: auto;
-    background-color:white;
+.left-container{ /* The Website is split into two "columns". The Left part contains the Navigation Menu and the Logo  */
+    float:left; /* Set the div to the left  */
+    width: 15%; 
+    height: auto; /* Orients itself on the height of the menu */
     margin-top:10px;
     border-collapse: collapse;
 }
-.right-container{
-    float:right;
-    width:84%;
+.right-container{ /* Right Container contains the main Part */
+    float:right; /* Set the div to the right */
+    width:80%; 
     height:auto;
     margin-top:10px;
     border-collapse: collapse;
