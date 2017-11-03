@@ -16,14 +16,14 @@ html, body{
     border-collapse: collapse;
 }
 .right-container{ /* Right Container contains the main Part */
-    float:right; /* Set the div to the right */
+    float:left; /* Set the div to the left side, next to the menu div */
     width:80%; 
     height:auto;/* height depends on the content */
     margin-top:10px; /* Set a little Margin from the top */
     border-collapse: collapse; /* If we later deside to add a border to the menu and content, it won't display both.  */
     margin-bottom:5%;/* Leave some space at the bottom. */
     border-left:1px solid grey; /* Seperates the menu visually from the main content  */
-    padding-left:5px; /* Inner-Left margin, so the content isn't directly at the border */
+    padding-left:10px; /* Inner-Left margin, so the content isn't directly at the border */
 }
 
 .logo-left{ /* Define the Possible size of the Logo-Img  */
@@ -91,7 +91,12 @@ footer .footer-content{/* Defines the Footer Information-Boxes */
     width:33%; /* It's split up into three equal parts. Each part has a width of 33%. */
     display:inline-block; /* Defines the Box-Style of the div */ 
     text-align: center; /* Centers the text */
-    padding-top: 10px;
+    height:100%;
+    line-height: 2.5; /* Gets multiplied with the font size and sets the Footer text horizontal centered. */
+}
+
+footer .footer-content a{
+    text-decoration: none;
 }
 
 /*
