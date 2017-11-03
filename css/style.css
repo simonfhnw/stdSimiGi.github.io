@@ -36,7 +36,7 @@ html, body{
     height:100%; 
     margin-left:auto;
     margin-right:auto;/* Centers the Img */
-    display:block; /* Defines the box around the img */
+    display:inline-block; /* Defines the box around the img */
 }
 
 .left-container ul{ /* Definition of the List */
